@@ -31,22 +31,23 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnXoaDL = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tbSoTC = new System.Windows.Forms.TextBox();
-            this.btnNhap = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tbNhap = new System.Windows.Forms.TextBox();
+            this.btnXoaDL = new System.Windows.Forms.Button();
+            this.btnNhap = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnTinh = new System.Windows.Forms.Button();
             this.tbLoai = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbDTB4 = new System.Windows.Forms.TextBox();
             this.tbDTB10 = new System.Windows.Forms.TextBox();
+            this.btnTinh = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -79,17 +80,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập dữ liệu";
             // 
-            // btnXoaDL
-            // 
-            this.btnXoaDL.Location = new System.Drawing.Point(186, 21);
-            this.btnXoaDL.Name = "btnXoaDL";
-            this.btnXoaDL.Size = new System.Drawing.Size(120, 28);
-            this.btnXoaDL.TabIndex = 6;
-            this.btnXoaDL.TabStop = false;
-            this.btnXoaDL.Text = "Xoá dữ liệu";
-            this.btnXoaDL.UseVisualStyleBackColor = true;
-            this.btnXoaDL.Click += new System.EventHandler(this.btnXoaDL_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -108,16 +98,6 @@
             this.tbSoTC.TextChanged += new System.EventHandler(this.tbSoTC_TextChanged);
             this.tbSoTC.Leave += new System.EventHandler(this.tbSoTC_Leave);
             // 
-            // btnNhap
-            // 
-            this.btnNhap.Location = new System.Drawing.Point(29, 21);
-            this.btnNhap.Name = "btnNhap";
-            this.btnNhap.Size = new System.Drawing.Size(104, 28);
-            this.btnNhap.TabIndex = 2;
-            this.btnNhap.Text = "Nhập";
-            this.btnNhap.UseVisualStyleBackColor = true;
-            this.btnNhap.Click += new System.EventHandler(this.btnNhap_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -135,6 +115,27 @@
             this.tbNhap.TabIndex = 0;
             this.tbNhap.Leave += new System.EventHandler(this.tbNhap_Leave);
             // 
+            // btnXoaDL
+            // 
+            this.btnXoaDL.Location = new System.Drawing.Point(167, 21);
+            this.btnXoaDL.Name = "btnXoaDL";
+            this.btnXoaDL.Size = new System.Drawing.Size(120, 28);
+            this.btnXoaDL.TabIndex = 6;
+            this.btnXoaDL.TabStop = false;
+            this.btnXoaDL.Text = "Xoá dữ liệu";
+            this.btnXoaDL.UseVisualStyleBackColor = true;
+            this.btnXoaDL.Click += new System.EventHandler(this.btnXoaDL_Click);
+            // 
+            // btnNhap
+            // 
+            this.btnNhap.Location = new System.Drawing.Point(29, 21);
+            this.btnNhap.Name = "btnNhap";
+            this.btnNhap.Size = new System.Drawing.Size(104, 28);
+            this.btnNhap.TabIndex = 2;
+            this.btnNhap.Text = "Nhập";
+            this.btnNhap.UseVisualStyleBackColor = true;
+            this.btnNhap.Click += new System.EventHandler(this.btnNhap_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbLoai);
@@ -150,17 +151,6 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kết quả";
-            // 
-            // btnTinh
-            // 
-            this.btnTinh.Location = new System.Drawing.Point(359, 21);
-            this.btnTinh.Name = "btnTinh";
-            this.btnTinh.Size = new System.Drawing.Size(106, 28);
-            this.btnTinh.TabIndex = 6;
-            this.btnTinh.TabStop = false;
-            this.btnTinh.Text = "Tính điểm";
-            this.btnTinh.UseVisualStyleBackColor = true;
-            this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
             // tbLoai
             // 
@@ -216,21 +206,44 @@
             this.tbDTB10.TabIndex = 4;
             this.tbDTB10.TabStop = false;
             // 
+            // btnTinh
+            // 
+            this.btnTinh.Location = new System.Drawing.Point(325, 21);
+            this.btnTinh.Name = "btnTinh";
+            this.btnTinh.Size = new System.Drawing.Size(106, 28);
+            this.btnTinh.TabIndex = 6;
+            this.btnTinh.TabStop = false;
+            this.btnTinh.Text = "Tính điểm";
+            this.btnTinh.UseVisualStyleBackColor = true;
+            this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
+            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnThoat);
             this.groupBox3.Controls.Add(this.btnTinh);
             this.groupBox3.Controls.Add(this.btnXoaDL);
             this.groupBox3.Controls.Add(this.btnNhap);
-            this.groupBox3.Location = new System.Drawing.Point(90, 334);
+            this.groupBox3.Location = new System.Drawing.Point(38, 334);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(493, 62);
+            this.groupBox3.Size = new System.Drawing.Size(593, 62);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức năng";
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(465, 21);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(106, 28);
+            this.btnThoat.TabIndex = 8;
+            this.btnThoat.TabStop = false;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmMain
             // 
@@ -277,6 +290,7 @@
         private System.Windows.Forms.Button btnTinh;
         private System.Windows.Forms.Button btnXoaDL;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
 
